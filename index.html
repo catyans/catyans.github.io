@@ -1,70 +1,118 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的简历</title>
+    <title>Your Name - CV</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
+            font-family: 'Arial', sans-serif;
+            margin: 50px;
+            line-height: 1.6;
         }
-        header {
-            text-align: center;
-            margin-bottom: 40px;
+
+        h1, h2, h3 {
+            color: #333;
         }
-        h1 {
-            font-size: 2em;
-        }
+
         h2 {
-            border-bottom: 2px solid #333;
+            border-bottom: 1px solid #ddd;
             padding-bottom: 10px;
-            margin-top: 30px;
         }
+
         ul {
             list-style-type: none;
+            padding-left: 0;
         }
+
         li {
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+        }
+
+        .publications p, .conference-talks p {
+            margin-top: 0;
+        }
+
+        a {
+            color: #0066CC;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
+
 <body>
 
-<header>
-    <h1>王猫头</h1>
-    <p>前端开发工程师</p>
-    <p>Email:  | 手机: </p>
-</header>
+    <h1>Your Name</h1>
+    <p>Email: <a href="mailto:your@email.com">your@email.com</a></p>
+    <p>Website: <a href="http://yourpersonalwebsite.com">yourpersonalwebsite.com</a></p>
+    <p>LinkedIn: <a href="http://linkedin.com/in/yourprofile">linkedin.com/in/yourprofile</a></p>
 
-<section>
-    <h2>教育经历</h2>
+    <h2>Education</h2>
     <ul>
-        <li><strong>北京大学</strong> - 计算机科学与技术 - 2019-2023</li>
-    </ul>
-</section>
-
-<section>
-    <h2>工作经验</h2>
-    <ul>
-        <li><strong>ABC公司</strong> - 前端开发工程师 - 2023-现在
-            <ul>
-                <li>负责开发和维护公司的主要网站。</li>
-                <li>与设计师和后端工程师密切合作，实现高质量的用户界面。</li>
-            </ul>
+        <li>
+            <strong>PhD in Your Field</strong>, University Name, City, Year
+            <p>Thesis Title: "Your Thesis Title"</p>
         </li>
+        <!-- Add more education entries as needed -->
     </ul>
-</section>
 
-<section>
-    <h2>技能</h2>
+    <h2>Research Experience</h2>
     <ul>
-        <li>HTML/CSS</li>
-        <li>JavaScript</li>
-        <li>React.js & Vue.js</li>
-        <li>Webpack & Babel</li>
+        <li>
+            <strong>Postdoctoral Researcher</strong>, Lab or Institute Name, Year-Year
+            <p>Research Topic: Brief description of your research.</p>
+        </li>
+        <!-- Add more research experience entries as needed -->
     </ul>
-</section>
+
+    <h2>Publications</h2>
+    <ul class="publications">
+        <li>
+            <strong>Your Name</strong>, Co-Author Name, etc. (Year). <a href="#">Title of your paper</a>. Journal Name, volume(issue), pages.
+        </li>
+        <!-- Add more publication entries as needed -->
+    </ul>
+
+    <h2>Conference Talks & Presentations</h2>
+    <ul class="conference-talks">
+        <li>
+            <strong>Your Name</strong> (Year). <a href="#">Title of your talk or presentation</a>. Conference Name, Location.
+        </li>
+        <!-- Add more conference talks & presentations as needed -->
+    </ul>
+
+    <h2>Awards & Honors</h2>
+    <ul>
+        <li><strong>Award Name</strong>, Year, Awarding Institution</li>
+        <!-- Add more awards & honors as needed -->
+    </ul>
+
+    <h2>Teaching Experience</h2>
+    <ul>
+        <li>
+            <strong>Instructor</strong>, Course Name, University Name, Semester Year
+            <p>Short description of the course.</p>
+        </li>
+        <!-- Add more teaching experience as needed -->
+    </ul>
+
+    <h2>Professional Affiliations</h2>
+    <ul>
+        <li>Association or Society Name, Member since Year</li>
+        <!-- Add more affiliations as needed -->
+    </ul>
+
+    <!-- You can also include sections like "Skills", "Languages", "References", etc. as needed -->
+
+    <footer>
+        <p>&copy; Your Name, Year. All rights reserved.</p>
+    </footer>
 
 </body>
+
 </html>
