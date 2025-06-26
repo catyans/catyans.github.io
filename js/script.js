@@ -1,6 +1,119 @@
+// 立即执行强制显示页面内容
+(function() {
+    console.log('立即强制显示页面');
+    if (document.body) {
+        document.body.style.visibility = 'visible';
+        document.body.style.opacity = '1';
+    }
+    if (document.documentElement) {
+        document.documentElement.style.visibility = 'visible';
+        document.documentElement.style.opacity = '1';
+    }
+    
+    // 强制修复hero section
+    setTimeout(function() {
+        const hero = document.querySelector('.hero');
+        const heroContainer = document.querySelector('.hero-container');
+        const heroContent = document.querySelector('.hero-content');
+        const heroBackground = document.querySelector('.hero-background');
+        
+        if (hero) {
+            hero.style.display = 'flex';
+            hero.style.visibility = 'visible';
+            hero.style.opacity = '1';
+            hero.style.background = 'linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)';
+            hero.style.minHeight = '100vh';
+            hero.style.zIndex = '1';
+            console.log('Hero section 强制显示');
+        }
+        
+        if (heroContainer) {
+            heroContainer.style.display = 'block';
+            heroContainer.style.visibility = 'visible';
+            heroContainer.style.opacity = '1';
+            heroContainer.style.zIndex = '2';
+            console.log('Hero container 强制显示');
+        }
+        
+        if (heroContent) {
+            heroContent.style.display = 'block';
+            heroContent.style.visibility = 'visible';
+            heroContent.style.opacity = '1';
+            heroContent.style.zIndex = '3';
+            console.log('Hero content 强制显示');
+        }
+        
+        // 确保背景元素层级正确
+        if (heroBackground) {
+            heroBackground.style.zIndex = '-1';
+            heroBackground.style.pointerEvents = 'none';
+            console.log('Hero background 层级已修正');
+        }
+        
+        // 强制显示所有hero子元素
+        const heroElements = document.querySelectorAll('.hero *, .hero-content *, .hero-avatar *, .hero-title *, .hero-buttons *, .hero-social *');
+        heroElements.forEach(el => {
+            el.style.visibility = 'visible';
+            el.style.opacity = '1';
+        });
+        
+        console.log('所有hero元素强制显示完成');
+    }, 50);
+})();
+
+// 强制显示页面内容，防止黑框问题
+window.addEventListener('load', function() {
+    console.log('强制显示页面内容');
+    document.body.style.visibility = 'visible';
+    document.body.style.opacity = '1';
+    document.documentElement.style.visibility = 'visible';
+    document.documentElement.style.opacity = '1';
+    
+    // 移除可能的预加载器
+    const preloaders = document.querySelectorAll('.preloader, #preloader, .loading, #loading');
+    preloaders.forEach(el => el.remove());
+    
+    // 强制显示主要元素
+    const mainElements = document.querySelectorAll('nav, .hero, section, footer');
+    mainElements.forEach(el => {
+        if (el) {
+            el.style.visibility = 'visible';
+            el.style.opacity = '1';
+            el.style.display = el.style.display || 'block';
+        }
+    });
+});
+
 // 简化版功能实现  
 document.addEventListener('DOMContentLoaded', function() {
     console.log('页面加载完成');
+    
+    // 再次强制显示hero section内容
+    setTimeout(function() {
+        const hero = document.querySelector('.hero');
+        const heroElements = document.querySelectorAll('.hero, .hero-container, .hero-content, .hero-avatar, .avatar-img, .hero-title, .title-line, .title-subtitle, .hero-description, .hero-buttons, .hero-social');
+        
+        heroElements.forEach(function(element) {
+            if (element) {
+                element.style.display = element.tagName === 'SPAN' ? 'block' : (element.classList.contains('hero') ? 'flex' : 'block');
+                element.style.visibility = 'visible';
+                element.style.opacity = '1';
+                element.style.color = element.style.color || '#ffffff';
+            }
+        });
+        
+        // 特别处理按钮和链接
+        const buttons = document.querySelectorAll('.hero-buttons .btn, .hero-social .social-link');
+        buttons.forEach(function(btn) {
+            if (btn) {
+                btn.style.display = 'inline-flex';
+                btn.style.visibility = 'visible';
+                btn.style.opacity = '1';
+            }
+        });
+        
+        console.log('DOMContentLoaded: Hero section 强制显示完成');
+    }, 100);
     
     // 修复按钮点击问题 - 确保按钮在最上层
     const heroButtons = document.querySelector('.hero-buttons');
