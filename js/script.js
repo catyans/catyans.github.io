@@ -54,7 +54,18 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log('Google Scholar 按钮已绑定');
     }
     
-    // 3. 邮件按钮
+    // 3. Quant Project PDF 按钮
+    const quantBtn = document.querySelector('a[href$=".pdf"]');
+    console.log('找到 Quant Project 按钮:', quantBtn);
+    if (quantBtn) {
+        quantBtn.addEventListener('click', function(e) {
+            console.log('Quant Project 按钮被点击');
+            showNotification('正在打开量化项目文档...', 2000);
+        });
+        console.log('Quant Project 按钮已绑定');
+    }
+    
+    // 4. 邮件按钮
     const emailBtns = document.querySelectorAll('a[href^="mailto:"]');
     console.log('找到邮件按钮数量:', emailBtns.length);
     emailBtns.forEach((btn, index) => {
@@ -84,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // 4. 电话按钮
+    // 5. 电话按钮
     const phoneBtns = document.querySelectorAll('a[href^="tel:"]');
     console.log('找到电话按钮数量:', phoneBtns.length);
     phoneBtns.forEach((btn, index) => {
@@ -115,7 +126,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // 5. 导航菜单平滑滚动
+    // 6. 导航菜单平滑滚动
     const navLinks = document.querySelectorAll('.nav-menu a[href^="#"]');
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
@@ -131,7 +142,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // 6. 移动端菜单
+    // 7. 移动端菜单
     const hamburger = document.querySelector('.hamburger');
     const navMenu = document.querySelector('.nav-menu');
     if (hamburger && navMenu) {
