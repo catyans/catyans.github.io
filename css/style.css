@@ -163,9 +163,9 @@ body {
 
 .hero-avatar {
     position: relative;
-    width: 200px;
-    height: 200px;
-    margin: 0 auto 2rem;
+    width: 160px;
+    height: 160px;
+    margin: 0 auto 1.5rem;
 }
 
 .avatar-img {
@@ -223,7 +223,7 @@ body {
     display: flex;
     gap: 1rem;
     justify-content: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     flex-wrap: wrap;
 }
 
@@ -785,6 +785,13 @@ section {
     .hero-buttons {
         flex-direction: column;
         align-items: center;
+        margin-bottom: 1rem;
+    }
+    
+    .hero-avatar {
+        width: 140px;
+        height: 140px;
+        margin: 0 auto 1.2rem;
     }
     
     .about-content {
@@ -827,8 +834,9 @@ section {
     }
     
     .hero-avatar {
-        width: 150px;
-        height: 150px;
+        width: 120px;
+        height: 120px;
+        margin: 0 auto 1rem;
     }
     
     .title-line {
@@ -845,6 +853,14 @@ section {
     
     .project-results {
         grid-template-columns: 1fr;
+    }
+    
+    .hero-buttons {
+        margin-bottom: 0.8rem;
+    }
+    
+    .hero-description {
+        margin-bottom: 1.5rem;
     }
 }
 
