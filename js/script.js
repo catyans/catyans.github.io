@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (scholarBtn) {
         scholarBtn.addEventListener('click', function(e) {
             console.log('Google Scholar 按钮被点击');
-            showNotification('正在打开 Google Scholar...', 2000);
+            showNotification('Opening Google Scholar...', 2000);
         });
         console.log('Google Scholar 按钮已绑定');
     }
@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (quantBtn) {
         quantBtn.addEventListener('click', function(e) {
             console.log('Quant Project 按钮被点击');
-            showNotification('正在打开量化项目文档...', 2000);
+            showNotification('Opening quantitative project document...', 2000);
         });
         console.log('Quant Project 按钮已绑定');
     }
@@ -79,13 +79,13 @@ document.addEventListener('DOMContentLoaded', function() {
             // 复制邮箱
             if (navigator.clipboard) {
                 navigator.clipboard.writeText(email).then(() => {
-                    showNotification('邮箱地址已复制: ' + email, 3000);
+                    showNotification('Email address copied: ' + email, 3000);
                     console.log('邮箱已复制');
                 }).catch(() => {
-                    showNotification('邮箱地址: ' + email, 3000);
+                    showNotification('Email address: ' + email, 3000);
                 });
             } else {
-                showNotification('邮箱地址: ' + email, 3000);
+                showNotification('Email address: ' + email, 3000);
             }
             
             // 延迟打开邮件客户端
@@ -107,20 +107,20 @@ document.addEventListener('DOMContentLoaded', function() {
             
             if (isMobile) {
                 // 移动端：自动拨号
-                showNotification('正在拨号: ' + phone, 2000);
+                showNotification('Dialing: ' + phone, 2000);
             } else {
                 // 桌面端：复制号码
                 e.preventDefault();
                 e.stopPropagation();
                 if (navigator.clipboard) {
                     navigator.clipboard.writeText(phone).then(() => {
-                        showNotification('电话号码已复制: ' + phone, 3000);
+                        showNotification('Phone number copied: ' + phone, 3000);
                         console.log('电话号码已复制');
                     }).catch(() => {
-                        showNotification('电话号码: ' + phone, 3000);
+                        showNotification('Phone number: ' + phone, 3000);
                     });
                 } else {
-                    showNotification('电话号码: ' + phone, 3000);
+                    showNotification('Phone number: ' + phone, 3000);
                 }
             }
         });
