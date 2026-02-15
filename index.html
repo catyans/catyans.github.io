@@ -3,23 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yanshu Wang - AI Researcher & System Architect</title>
+    <title>Yanshu Wang - Peking University</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="nav-logo">
-                <span>Yanshu Wang </span>
-            </div>
+            <a href="#home" class="nav-logo">Yanshu Wang</a>
             <div class="nav-menu">
                 <a href="#home" class="nav-link">Home</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#research" class="nav-link">Research</a>
                 <a href="#publications" class="nav-link">Publications</a>
+                <a href="#projects" class="nav-link">Projects</a>
                 <a href="#contact" class="nav-link">Contact</a>
             </div>
             <div class="hamburger">
@@ -30,133 +29,64 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <div class="hero-avatar">
-                    <img src="images/avatar.jpg" alt="Yanshu Wang" class="avatar-img">
-                    <div class="avatar-ring"></div>
-                </div>
-                <h1 class="hero-title">
-                    <span class="title-line">Yanshu Wang (王砚舒)</span>
-                    <span class="title-subtitle">AI Researcher & System Architect</span>
-                </h1>
-                <p class="hero-description">
-                    Postdoctoral Researcher at Peking University, specializing in AI agents design, LLM inference optimization,
-                    distributed machine learning, and high-performance computing systems.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary" title="View my research projects">View Projects</a>
-                    <a href="https://scholar.google.com.hk/citations?hl=en&pli=1&user=PYehu7MAAAAJ" target="_blank" class="btn btn-secondary" title="Open Google Scholar profile in new tab">
-                        <i class="fas fa-graduation-cap"></i> Google Scholar
-                    </a>
-                    <a href="fince.pdf" target="_blank" class="btn btn-secondary" title="View Quantitative Finance Project PDF">
-                        <i class="fas fa-chart-line"></i> Quant Project
-                    </a>
-                </div>
-                <div class="hero-social">
-                    <a href="mailto:x@cathead.vip" class="social-link" title="Send Email">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                    <a href="tel:+8613149218260" class="social-link" title="Call Phone">
-                        <i class="fas fa-phone"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="hero-background">
-                <div class="bg-animation"></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
+    <!-- Hero / Profile Section -->
+    <section id="home" class="profile-section">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        I am a Postdoctoral Researcher at Peking University's School of Computer Science, 
-                        with a Ph.D. in Computer Science from Tsinghua University (GPA: 3.93/4.0). 
-                        My research focuses on AI agents design, automated workflow optimization, 
-                        distributed machine learning, and high-performance computing systems.
-                    </p>
-                    <p>
-                        Currently, I'm focusing on developing AI agents for data acquisition and analysis, 
-                        building intelligent systems for automated workflow optimization. Previously, 
-                        I worked on post-training for domain-specific large models, including SFT and RLHF for medical applications.
-                    </p>
-                </div>
-                <div class="about-stats">
-                    <div class="stat-item">
-                        <span class="stat-number">15+</span>
-                        <span class="stat-label">Research Projects</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">4</span>
-                        <span class="stat-label">Top-tier Publications</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">8</span>
-                        <span class="stat-label">Quant Strategies</span>
+            <div class="profile-layout">
+                <div class="profile-sidebar">
+                    <img src="images/avatar.jpg" alt="Yanshu Wang" class="profile-photo">
+                    <h1 class="profile-name">Yanshu Wang</h1>
+                    <p class="profile-name-cn">王砚舒</p>
+                    <p class="profile-title">Postdoctoral Researcher</p>
+                    <p class="profile-affiliation">School of Computer Science<br>Peking University</p>
+                    <div class="profile-links">
+                        <a href="mailto:x@cathead.vip"><i class="fas fa-envelope"></i> x@cathead.vip</a>
+                        <a href="https://scholar.google.com.hk/citations?hl=en&pli=1&user=PYehu7MAAAAJ" target="_blank"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
+                        <a href="tel:+8613149218260"><i class="fas fa-phone"></i> (+86) 131-4921-8260</a>
+                        <a href="#"><i class="fas fa-map-marker-alt"></i> Beijing, China</a>
                     </div>
                 </div>
-            </div>
-            
-            <div class="education">
-                <h3>Education</h3>
-                <div class="education-item">
-                    <div class="edu-icon">
-                        <i class="fas fa-university"></i>
-                    </div>
-                    <div class="edu-content">
-                        <h4>Ph.D. in Computer Science and Technology</h4>
-                        <p>Tsinghua University (2017-2022)</p>
-                        <span class="edu-gpa">GPA: 3.93/4.0</span>
-                    </div>
-                </div>
-                <div class="education-item">
-                    <div class="edu-icon">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <div class="edu-content">
-                        <h4>B.Sc. Computer Science & B.A. Economics</h4>
-                        <p>Xi'an Jiaotong University (2013-2017)</p>
-                        <span class="edu-gpa">Ranked 1st in both majors</span>
-                    </div>
-                </div>
-            </div>
 
-            <div class="skills">
-                <h3>Research Interests & Skills</h3>
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h4>AI and LLM</h4>
-                        <div class="skill-tags">
-                            <span class="skill-tag">AI agent</span>
-                            <span class="skill-tag">SFT</span>
-                            <span class="skill-tag">RLHF</span>
-                            <span class="skill-tag">Distributed Training</span>
-                            <span class="skill-tag">Model Quantization</span>
-                        </div>
+                <div class="profile-main">
+                    <div class="bio-section">
+                        <h2>About Me</h2>
+                        <p>
+                            I am a Postdoctoral Researcher at the School of Computer Science, <strong>Peking University</strong>.
+                            I received my Ph.D. in Computer Science and Technology from <strong>Tsinghua University</strong> in 2022 (GPA: 3.93/4.0),
+                            and double B.Sc./B.A. degrees in Computer Science and Economics from <strong>Xi'an Jiaotong University</strong> in 2017,
+                            where I ranked 1st in both majors.
+                        </p>
+                        <p>
+                            My research interests include <strong>AI agent design</strong>, <strong>LLM inference optimization</strong>,
+                            <strong>distributed machine learning</strong>, and <strong>high-performance computing systems</strong>.
+                            Currently, I focus on developing AI agents for automated data acquisition and analysis,
+                            as well as intelligent workflow optimization.
+                        </p>
                     </div>
-                    <div class="skill-category">
-                        <h4>Systems</h4>
-                        <div class="skill-tags">
-                            <span class="skill-tag">High-Performance Computing</span>
-                            <span class="skill-tag">Network Measurement</span>
-                            <span class="skill-tag">Flow Table Management</span>
-                            <span class="skill-tag">Sketch Algorithms</span>
-                        </div>
+
+                    <div class="news-section">
+                        <h2>News</h2>
+                        <ul class="news-list">
+                            <li><span class="news-date">[2025]</span> Paper accepted at <strong>ICDE 2025</strong> (CCF A) on sketch-based network measurement.</li>
+                            <li><span class="news-date">[2024]</span> Joined Peking University as a Postdoctoral Researcher.</li>
+                            <li><span class="news-date">[2022]</span> Paper accepted at <strong>NSDI 2022</strong> (CCF A) on hybrid flow table management.</li>
+                            <li><span class="news-date">[2022]</span> Received Ph.D. from Tsinghua University.</li>
+                        </ul>
                     </div>
-                    <div class="skill-category">
-                        <h4>Quantitative Finance</h4>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Arbitrage Strategies</span>
-                            <span class="skill-tag">Options Trading</span>
-                            <span class="skill-tag">Risk Management</span>
-                            <span class="skill-tag">Portfolio Optimization</span>
+
+                    <div class="education-section">
+                        <h2>Education</h2>
+                        <div class="edu-list">
+                            <div class="edu-item">
+                                <div class="edu-degree">Ph.D. in Computer Science and Technology</div>
+                                <div class="edu-school">Tsinghua University, 2017 &ndash; 2022</div>
+                                <div class="edu-detail">GPA: 3.93/4.0</div>
+                            </div>
+                            <div class="edu-item">
+                                <div class="edu-degree">B.Sc. in Computer Science &amp; B.A. in Economics</div>
+                                <div class="edu-school">Xi'an Jiaotong University, 2013 &ndash; 2017</div>
+                                <div class="edu-detail">Ranked 1st in both majors</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -164,308 +94,163 @@
         </div>
     </section>
 
-    <!-- Featured Projects Section -->
-    <section id="projects" class="projects">
+    <!-- Research Interests Section -->
+    <section id="research" class="section">
         <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid">
-                <!-- Project 1: AI Agent -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-robot"></i>
-                        </div>
-                        <h3>AI Agent for Data Acquisition</h3>
-                    </div>
-                    <p class="project-description">
-                        Currently building intelligent agents for automated data acquisition and analysis processing, enabling efficient workflow optimization across multiple domains.
-                    </p>
-                    <div class="project-results">
-                        <div class="result-item">
-                            <span class="result-number">Vertical Domains</span>
-                            <span class="result-label">Data Collection & Analysis</span>
-                        </div>
-                        <div class="result-item">
-                            <span class="result-number">Key Features</span>
-                            <span class="result-label">Trustworthy & Traceable</span>
-                        </div>
-                    </div>
-                    <div class="project-tech">
-                        <span class="tech-tag">AI Agent</span>
-                        <span class="tech-tag">Data Analysis</span>
-                        <span class="tech-tag">Automation</span>
-                    </div>
-                    <div class="project-publication">
-                        <i class="fas fa-rocket"></i>
-                        <span>Current Focus</span>
-                    </div>
+            <h2 class="section-title">Research Interests</h2>
+            <div class="research-grid">
+                <div class="research-card">
+                    <div class="research-icon"><i class="fas fa-robot"></i></div>
+                    <h3>AI Agent Design</h3>
+                    <p>Building intelligent agents for automated data acquisition and analysis, enabling trustworthy and traceable workflow optimization across vertical domains.</p>
                 </div>
-
-                <!-- Project 2: Medical Large Language Model -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-user-md"></i>
-                        </div>
-                        <h3>Medical Large Language Model (Previous Work)</h3>
-                    </div>
-                    <p class="project-description">
-                        Previous research on post-training optimization for medical domain large models using Supervised Fine-Tuning (SFT) and Reinforcement Learning from Human Feedback (RLHF).
-                    </p>
-                    <div class="project-results">
-                        <div class="result-item">
-                            <span class="result-number">SFT</span>
-                            <span class="result-label">Fine-tuning</span>
-                        </div>
-                        <div class="result-item">
-                            <span class="result-number">RLHF</span>
-                            <span class="result-label">Optimization</span>
-                        </div>
-                    </div>
-                    <div class="project-tech">
-                        <span class="tech-tag">Large Language Models</span>
-                        <span class="tech-tag">Medical AI</span>
-                        <span class="tech-tag">RLHF</span>
-                    </div>
-                    <div class="project-publication">
-                        <i class="fas fa-clock"></i>
-                        <span>Previous Research</span>
-                    </div>
+                <div class="research-card">
+                    <div class="research-icon"><i class="fas fa-microchip"></i></div>
+                    <h3>LLM Optimization</h3>
+                    <p>Model quantization using Hessian-based methods and high-dimensional subspace compression. Post-training optimization including SFT and RLHF for domain-specific applications.</p>
                 </div>
-
-                <!-- Project 3: Model Quantization -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-microchip"></i>
-                        </div>
-                        <h3>Large Model Quantization</h3>
-                    </div>
-                    <p class="project-description">
-                        Designed weight quantization using Hessian and high-dimensional subspace compression for large model inference optimization.
-                    </p>
-                    <div class="project-results">
-                        <div class="result-item">
-                            <span class="result-number">30%</span>
-                            <span class="result-label">Model Compression</span>
-                        </div>
-                        <div class="result-item">
-                            <span class="result-number">Minimal</span>
-                            <span class="result-label">Performance Impact</span>
-                        </div>
-                    </div>
-                    <div class="project-tech">
-                        <span class="tech-tag">Model Compression</span>
-                        <span class="tech-tag">Quantization</span>
-                        <span class="tech-tag">Large Models</span>
-                    </div>
-                    <div class="project-publication">
-                        <i class="fas fa-cog"></i>
-                        <span>Optimization Research</span>
-                    </div>
+                <div class="research-card">
+                    <div class="research-icon"><i class="fas fa-network-wired"></i></div>
+                    <h3>Distributed ML Systems</h3>
+                    <p>Designing efficient parameter synchronization topologies and gradient compression algorithms for large-scale distributed machine learning training.</p>
                 </div>
-
-                <!-- Project 4: DaVinci Sketch -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
-                        <h3>Sketch-Based Network Measurement</h3>
-                    </div>
-                    <p class="project-description">
-                        Developed a unified sketch to reduce collision and support 9 types of set measurement tasks efficiently.
-                    </p>
-                    <div class="project-results">
-                        <div class="result-item">
-                            <span class="result-number">90%</span>
-                            <span class="result-label">Memory Savings</span>
-                        </div>
-                        <div class="result-item">
-                            <span class="result-number">40×</span>
-                            <span class="result-label">Throughput Boost</span>
-                        </div>
-                    </div>
-                    <div class="project-tech">
-                        <span class="tech-tag">Sketch Algorithms</span>
-                        <span class="tech-tag">Network Measurement</span>
-                        <span class="tech-tag">Data Structures</span>
-                    </div>
-                    <div class="project-publication">
-                        <i class="fas fa-file-alt"></i>
-                        <span>ICDE 2025 (CCF A)</span>
-                    </div>
-                </div>
-
-                <!-- Project 5: Elixir -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-server"></i>
-                        </div>
-                        <h3>Hybrid Flow Table Management</h3>
-                    </div>
-                    <p class="project-description">
-                        Proposed a hybrid hardware/software scheme for NFV gateway management with significant performance improvements.
-                    </p>
-                    <div class="project-results">
-                        <div class="result-item">
-                            <span class="result-number">50%</span>
-                            <span class="result-label">Resource Reduction</span>
-                        </div>
-                        <div class="result-item">
-                            <span class="result-number">97%</span>
-                            <span class="result-label">Latency Reduction</span>
-                        </div>
-                    </div>
-                    <div class="project-tech">
-                        <span class="tech-tag">NFV</span>
-                        <span class="tech-tag">Hardware/Software</span>
-                        <span class="tech-tag">Network Systems</span>
-                    </div>
-                    <div class="project-publication">
-                        <i class="fas fa-file-alt"></i>
-                        <span>NSDI 2022 (CCF A)</span>
-                    </div>
-                </div>
-
-                <!-- Project 6: BML -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-network-wired"></i>
-                        </div>
-                        <h3>BML Distributed ML Acceleration</h3>
-                    </div>
-                    <p class="project-description">
-                        Designed a multidimensional ring topology for parameter synchronization in distributed machine learning.
-                    </p>
-                    <div class="project-results">
-                        <div class="result-item">
-                            <span class="result-number">25-50%</span>
-                            <span class="result-label">Sync Time Reduction</span>
-                        </div>
-                        <div class="result-item">
-                            <span class="result-number">56.4%</span>
-                            <span class="result-label">Training Acceleration</span>
-                        </div>
-                    </div>
-                    <div class="project-tech">
-                        <span class="tech-tag">Distributed Systems</span>
-                        <span class="tech-tag">Machine Learning</span>
-                        <span class="tech-tag">Optimization</span>
-                    </div>
-                    <div class="project-publication">
-                        <i class="fas fa-file-alt"></i>
-                        <span>NeurIPS 2018 (CCF A)</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Current Work Section -->
-    <section id="current-work" class="current-work">
-        <div class="container">
-            <h2 class="section-title">Current Work</h2>
-            <div class="work-grid">
-                <div class="work-item">
-                    <div class="work-icon">
-                        <i class="fas fa-robot"></i>
-                    </div>
-                    <h3>AI Agent Development</h3>
-                    <p>Currently building intelligent agents for data acquisition and analysis processing, enabling automated workflow optimization across multiple domains.</p>
-                </div>
-                <div class="work-item">
-                    <div class="work-icon">
-                        <i class="fas fa-chart-bar"></i>
-                    </div>
-                    <h3>Quantitative Finance</h3>
-                    <p>Developing and deploying proprietary quantitative trading strategies across multiple asset classes and markets.</p>
-                </div>
-                <div class="work-item">
-                    <div class="work-icon">
-                        <i class="fas fa-brain"></i>
-                    </div>
-                    <h3>AI Research & Trends</h3>
-                    <p>Continuously following new trends and developments in the AI field, staying updated with cutting-edge research and emerging technologies.</p>
+                <div class="research-card">
+                    <div class="research-icon"><i class="fas fa-server"></i></div>
+                    <h3>Network Systems</h3>
+                    <p>Sketch-based network measurement, hybrid hardware/software flow table management, and high-performance network function virtualization.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Publications Section -->
-    <section id="publications" class="publications">
+    <section id="publications" class="section section-alt">
         <div class="container">
-            <h2 class="section-title">Publications & Patents</h2>
-            <div class="publications-list">
-                <div class="publication-item">
-                    <div class="pub-venue">ICDE 2025 (CCF A)</div>
-                    <h3>DaVinci Sketch: A Versatile Sketch for Efficient and Comprehensive Set Measurements</h3>
-                    <p class="pub-authors">Yanshu Wang, Jianan Ji, Chao-Hsuan Liu, Hengyang Zhou, Tong Yang</p>
-                </div>
-                <div class="publication-item">
-                    <div class="pub-venue">NSDI 2022 (CCF A)</div>
-                    <h3>Elixir: A High-performance and Low-cost Approach to Managing Hardware/Software Hybrid Flow Tables</h3>
-                    <p class="pub-authors">Yanshu Wang, Dan Li, Yuanwei Lu, Jianping Wu, Hua Shao, Yutian Wang</p>
-                </div>
-                <div class="publication-item">
-                    <div class="pub-venue">Globecom 2021 (CCF C)</div>
-                    <h3>FastKeeper: A Fast Algorithm for Identifying Top-k Real-time Large Flows</h3>
-                    <p class="pub-authors">Yanshu Wang, Dan Li, Jianping Wu</p>
-                </div>
-                <div class="publication-item">
-                    <div class="pub-venue">NeurIPS 2018 (CCF A)</div>
-                    <h3>BML: A High-performance, Low-cost Gradient Synchronization Algorithm for DML Training</h3>
-                    <p class="pub-authors">Songtao Wang et al., including Yanshu Wang</p>
-                </div>
-            </div>
-            <div class="scholar-link">
-                <a href="https://scholar.google.com.hk/citations?hl=en&pli=1&user=PYehu7MAAAAJ" target="_blank" class="btn btn-primary">
-                    <i class="fas fa-graduation-cap"></i> View Full Publication List
+            <h2 class="section-title">Selected Publications</h2>
+            <ol class="pub-list">
+                <li class="pub-item">
+                    <div class="pub-title">DaVinci Sketch: A Versatile Sketch for Efficient and Comprehensive Set Measurements</div>
+                    <div class="pub-authors"><strong>Yanshu Wang</strong>, Jianan Ji, Chao-Hsuan Liu, Hengyang Zhou, Tong Yang</div>
+                    <div class="pub-venue"><span class="venue-badge">ICDE 2025</span> <span class="ccf-rank">CCF A</span> &mdash; IEEE International Conference on Data Engineering</div>
+                </li>
+                <li class="pub-item">
+                    <div class="pub-title">Elixir: A High-performance and Low-cost Approach to Managing Hardware/Software Hybrid Flow Tables</div>
+                    <div class="pub-authors"><strong>Yanshu Wang</strong>, Dan Li, Yuanwei Lu, Jianping Wu, Hua Shao, Yutian Wang</div>
+                    <div class="pub-venue"><span class="venue-badge">NSDI 2022</span> <span class="ccf-rank">CCF A</span> &mdash; USENIX Symposium on Networked Systems Design and Implementation</div>
+                </li>
+                <li class="pub-item">
+                    <div class="pub-title">FastKeeper: A Fast Algorithm for Identifying Top-k Real-time Large Flows</div>
+                    <div class="pub-authors"><strong>Yanshu Wang</strong>, Dan Li, Jianping Wu</div>
+                    <div class="pub-venue"><span class="venue-badge">Globecom 2021</span> <span class="ccf-rank">CCF C</span> &mdash; IEEE Global Communications Conference</div>
+                </li>
+                <li class="pub-item">
+                    <div class="pub-title">BML: A High-performance, Low-cost Gradient Synchronization Algorithm for DML Training</div>
+                    <div class="pub-authors">Songtao Wang et al., including <strong>Yanshu Wang</strong></div>
+                    <div class="pub-venue"><span class="venue-badge">NeurIPS 2018</span> <span class="ccf-rank">CCF A</span> &mdash; Conference on Neural Information Processing Systems</div>
+                </li>
+            </ol>
+            <div class="pub-more">
+                <a href="https://scholar.google.com.hk/citations?hl=en&pli=1&user=PYehu7MAAAAJ" target="_blank" class="btn-link">
+                    View full publication list on Google Scholar <i class="fas fa-external-link-alt"></i>
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <!-- Projects Section -->
+    <section id="projects" class="section">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h3>Email</h3>
-                            <p>x@cathead.vip</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h3>Phone (WeChat)</h3>
-                            <p>(+86) 131-4921-8260</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h3>Location</h3>
-                            <p>Beijing, China</p>
-                        </div>
+            <h2 class="section-title">Selected Projects</h2>
+            <div class="projects-list">
+                <div class="project-item">
+                    <h3>AI Agent for Data Acquisition and Analysis</h3>
+                    <p class="project-period">2024 &ndash; Present &middot; Peking University</p>
+                    <p>Building intelligent agents for automated data acquisition and analysis processing, enabling efficient workflow optimization across multiple vertical domains. Key features include trustworthy and traceable data pipelines.</p>
+                    <div class="project-tags">
+                        <span>AI Agent</span>
+                        <span>Data Analysis</span>
+                        <span>Workflow Automation</span>
                     </div>
                 </div>
-                <div class="contact-cta">
-                    <h3>Let's Collaborate</h3>
-                    <p>I'm always interested in discussing research opportunities, collaboration projects, or innovative ideas in AI and systems research.</p>
-                    <a href="mailto:x@cathead.vip" class="btn btn-primary">Send Message</a>
+                <div class="project-item">
+                    <h3>Medical Large Language Model Post-Training</h3>
+                    <p class="project-period">2023 &ndash; 2024</p>
+                    <p>Post-training optimization for medical domain large models using Supervised Fine-Tuning (SFT) and Reinforcement Learning from Human Feedback (RLHF), improving model accuracy and safety in clinical applications.</p>
+                    <div class="project-tags">
+                        <span>LLM</span>
+                        <span>Medical AI</span>
+                        <span>RLHF</span>
+                        <span>SFT</span>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <h3>Large Model Quantization</h3>
+                    <p class="project-period">2023</p>
+                    <p>Designed weight quantization using Hessian-based methods and high-dimensional subspace compression for efficient large model inference. Achieved 30% model compression with minimal performance degradation.</p>
+                    <div class="project-tags">
+                        <span>Model Compression</span>
+                        <span>Quantization</span>
+                        <span>Inference Optimization</span>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <h3>DaVinci: Unified Sketch for Set Measurements</h3>
+                    <p class="project-period">2022 &ndash; 2024 &middot; Published at ICDE 2025</p>
+                    <p>Developed a unified sketch data structure that reduces hash collision and supports 9 types of set measurement tasks. Achieved 90% memory savings and 40x throughput improvement over existing approaches.</p>
+                    <div class="project-tags">
+                        <span>Sketch Algorithms</span>
+                        <span>Network Measurement</span>
+                        <span>Data Structures</span>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <h3>Elixir: Hybrid Flow Table Management</h3>
+                    <p class="project-period">2019 &ndash; 2022 &middot; Published at NSDI 2022</p>
+                    <p>Proposed a hybrid hardware/software scheme for NFV gateway flow table management. Achieved 50% resource reduction and 97% latency reduction compared to software-only approaches.</p>
+                    <div class="project-tags">
+                        <span>NFV</span>
+                        <span>Flow Tables</span>
+                        <span>Network Systems</span>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <h3>BML: Distributed ML Gradient Synchronization</h3>
+                    <p class="project-period">2017 &ndash; 2018 &middot; Published at NeurIPS 2018</p>
+                    <p>Designed a multidimensional ring topology for parameter synchronization in distributed machine learning, achieving 25&ndash;50% synchronization time reduction and 56.4% overall training acceleration.</p>
+                    <div class="project-tags">
+                        <span>Distributed Systems</span>
+                        <span>Machine Learning</span>
+                        <span>Parameter Sync</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <a href="mailto:x@cathead.vip">x@cathead.vip</a>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-phone"></i>
+                    <h3>Phone / WeChat</h3>
+                    <a href="tel:+8613149218260">(+86) 131-4921-8260</a>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Address</h3>
+                    <p>School of Computer Science<br>Peking University<br>Beijing, China</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Google Scholar</h3>
+                    <a href="https://scholar.google.com.hk/citations?hl=en&pli=1&user=PYehu7MAAAAJ" target="_blank">View Profile</a>
                 </div>
             </div>
         </div>
@@ -474,21 +259,10 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2024 Yanshu Wang. All rights reserved.</p>
-                <div class="footer-social">
-                    <a href="mailto:x@cathead.vip" class="social-link">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                    <a href="https://scholar.google.com.hk/citations?hl=en&pli=1&user=PYehu7MAAAAJ" target="_blank" class="social-link">
-                        <i class="fas fa-graduation-cap"></i>
-                    </a>
-                </div>
-            </div>
+            <p>&copy; 2025 Yanshu Wang. School of Computer Science, Peking University.</p>
         </div>
     </footer>
 
     <script src="js/script.js"></script>
 </body>
 </html>
-
