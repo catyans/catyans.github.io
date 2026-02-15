@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://catyans.github.io/sitemap.xml
